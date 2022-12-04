@@ -69,10 +69,10 @@ class HomePage extends ConsumerWidget {
           currentWeather.when(
               data: (data) => Text(
                     data,
-                    style: TextStyle(fontSize: 50),
+                    style: const TextStyle(fontSize: 50),
                   ),
               error: ((error, stackTrace) => const Text('Error')),
-              loading: () => CircularProgressIndicator()),
+              loading: () => const CircularProgressIndicator()),
           Expanded(
             child: ListView.builder(
               itemCount: City.values.length,
